@@ -1,0 +1,16 @@
+{
+	"GameCardId":"CFM_315",
+	"ConfigComment":"PLAY CAT PLS",
+	
+	"BeforePlayCardBonus":
+	{
+		"values":
+		[
+			{
+			"comment":"play aerly",
+				"condition":"my_self(turn()) == 1",
+				"value":"+15",
+			}
+		],
+	},
+}

@@ -1,0 +1,29 @@
+{
+    "GameCardId":"Mulligan",    
+    "ConfigComment":"This is mulligan rules file.", 
+     
+    "Mulligan": 
+              {
+                          "values":
+                          [
+                                { 
+                                  "comment": "hold manawyrm ARCANOLOGIST miror image APPRETICE EX1608,EX1096 HOARDER, FROSTBOLTCS2024, loothorder ex1096",
+                                  "mulligan":"NEW_012,UNG_020,EX1_608,CS2_027,NEW1_012,EX1_096,CS2_024,EX1_096",
+                                    "condition":"my_hero(count(),mage) > 0",
+                                    "value":"hold",
+                                }
+                                ,
+                                { 
+                                  "comment": "discard all cards not listed as hold",
+                                  "mulligan":"*",
+                                    "condition": "my_hero(count(),mage) > 0",
+                                    "value":"discard",
+                                },
+                          ],
+                                       
+ 
+                        },
+ 
+                                                                                                                                                                                                                         
+         
+}

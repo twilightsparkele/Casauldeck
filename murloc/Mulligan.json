@@ -1,0 +1,127 @@
+﻿{	
+	"GameCardId":"Mulligan",	
+	"ConfigComment":"This is mulligan rules file.",	
+	
+	"Mulligan": 
+	          {
+						  "values":
+						  [
+						  		{ 
+						  		  "comment": "hold Grimscale Chum (CFM_650), Vilefin Inquisitor (OG_006), Hydrologist (UNG_011), Rockpool Hunter (UNG_073)",
+						  		  "mulligan":"CFM_650,OG_006,UNG_011,UNG_073",
+						  			"condition":"my_hero(count(),paladin)>0",
+						  			"value":"hold",
+						  		}
+								,
+								{ 
+						  		  "comment": "Murloc Tidecaller (EX1_509) when opponent is druid or hunter or mage or paladin or priest or rogue or warlock or warrior",
+						  		  "mulligan":"EX1_509",
+						  			"condition":"opp_hero(count(),druid=true)>0 OR opp_hero(count(),hunter=true)>0 OR opp_hero(count(),mage=true)>0 OR opp_hero(count(),paladin=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),rogue=true)>0 OR opp_hero(count(),warlock=true)>0 OR opp_hero(count(),warrior=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Bilefin Tidehunter (OG_156) when opponent is hunter",
+						  		  "mulligan":"OG_156",
+						  			"condition":"opp_hero(count(),hunter=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Murloc Warleader (EX1_507) when opponent is mage or priest or rogue",
+						  		  "mulligan":"EX1_509+UNG_011+EX1_507",
+						  			"condition":"opp_hero(count(),mage=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Murloc Warleader (EX1_507) when opponent is mage or priest or rogue",
+						  		  "mulligan":"EX1_509+UNG_073+EX1_507",
+						  			"condition":"opp_hero(count(),mage=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Murloc Warleader (EX1_507) when opponent is mage or priest or rogue",
+						  		  "mulligan":"CFM_650+UNG_011+EX1_507",
+						  			"condition":"opp_hero(count(),mage=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Murloc Warleader (EX1_507) when opponent is mage or priest or rogue",
+						  		  "mulligan":"CFM_650+UNG_073+EX1_507",
+						  			"condition":"opp_hero(count(),mage=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Murloc Warleader (EX1_507) when opponent is mage or priest or rogue",
+						  		  "mulligan":"OG_006+UNG_011+EX1_507",
+						  			"condition":"opp_hero(count(),mage=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Murloc Warleader (EX1_507) when opponent is mage or priest or rogue",
+						  		  "mulligan":"OG_006+UNG_073+EX1_507",
+						  			"condition":"opp_hero(count(),mage=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Gentle Megasaur (UNG_089) when opponent is rogue",
+						  		  "mulligan":"EX1_509+UNG_011+UNG_089",
+						  			"condition":"opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Gentle Megasaur (UNG_089) when opponent is rogue",
+						  		  "mulligan":"EX1_509+UNG_073+UNG_089",
+						  			"condition":"opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Gentle Megasaur (UNG_089) when opponent is rogue",
+						  		  "mulligan":"CFM_650+UNG_011+UNG_089",
+						  			"condition":"opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Gentle Megasaur (UNG_089) when opponent is rogue",
+						  		  "mulligan":"CFM_650+UNG_073+UNG_089",
+						  			"condition":"opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Gentle Megasaur (UNG_089) when opponent is rogue",
+						  		  "mulligan":"OG_006+UNG_011+UNG_089",
+						  			"condition":"opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+						  		{ 
+						  		  "comment": "Gentle Megasaur (UNG_089) when opponent is rogue",
+						  		  "mulligan":"OG_006+UNG_073+UNG_089",
+						  			"condition":"opp_hero(count(),rogue=true)>0",
+						  			"value":"hold",
+						  		}
+								,
+								{ 
+						  		  "comment": "discard all cards not listed as hold",
+						  		  "mulligan":"*",
+						  			"condition": "my_hero(count(),paladin) > 0",
+						  			"value":"discard",
+						  		}
+						  ],
+						  			  
+
+						},
+
+																																																						
+		
+}

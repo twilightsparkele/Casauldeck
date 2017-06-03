@@ -1,0 +1,49 @@
+{	
+	"GameCardId":"UNG_937",	
+	"ConfigComment":"Stonehill Defender discover bonus config",	
+
+	"OnDiscoverCardBonus": 
+	          {
+						  "values":
+						  [
+						  		{						  		  
+						  		  "comment":"choose Tirion Fordring (EX1_383)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=CFM_344) > 0 ",
+						  			"value":"11",
+						  		}
+								,
+						  		{						  		  
+						  		  "comment":"choose Wickerflame Burnbristle (CFM_815)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=EX1_507) > 0 ",
+						  			"value":"10",
+						  		}
+								,
+						  		{						  		  
+						  		  "comment":"choose Sunkeeper Tarim (UNG_015)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_937) > 0 ",
+						  			"value":"9",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Tar Creeper (UNG_928)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_073) > 0 ",
+						  			"value":"8",
+						  		}
+								,
+						  		
+						  		{	
+						  		  "comment":"choose Dirty Rat (CFM_790)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=OG_161) > 0 ",
+						  			"value":"-10",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Stubborn Gastropod (UNG_808)",					  		  					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_953) > 0 ",
+						  			"value":"-10",
+						  		}
+								,
+						  ],
+						},																																																					
+		
+}

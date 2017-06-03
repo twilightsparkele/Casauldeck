@@ -1,0 +1,16 @@
+{
+	"GameCardId":"UNG_018",
+	"ConfigComment":"ROC",
+	
+	"BeforePlayCardBonus":
+	{
+		"values":
+		[
+			{
+			"comment":"play wen2",
+				"condition":"opp_minions(count()) == 0",
+				"value":"-9",
+			}
+		],
+	},
+}

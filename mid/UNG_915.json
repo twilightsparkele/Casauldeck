@@ -1,0 +1,69 @@
+{
+	"GameCardId":"UNG_915",
+	"ConfigComment":"RAZORMAW",
+	
+	
+	"BeforePlayCardBonus": 
+		{
+		"values":
+			[
+				{	
+				"comment":"play this card as early as possible.", 
+				"condition": "my_minions(count(), beast=true) > 0",
+				"value":"10",
+				}
+			],
+		},	
+
+	"OnDiscoverCardBonus": 
+		{
+		"values":
+			[
+				{	
+				"comment":"choose +3 atk ",
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t3) > 0 ",
+				"value":"9",
+				},
+				{	
+				"comment":"choose windfury ",
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t7) > 0 ",
+				"value":"8",
+				},
+				{	
+				"comment":"choose +1/+1 ",
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t14) > 0 ",
+				"value":"7",
+				},
+				{	
+				"comment":"choose poison ",	
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t13) > 0 ",
+				"value":"6",
+				},
+				{	
+				"comment":"choose spores ",	
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t2) > 0 ",
+				"value":"5",
+				},
+				{	
+				"comment":"chose +3 hp ",	
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t4) > 0 ",
+				"value":"4",
+				},
+				{	
+				"comment":"choose divine shield ",	
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t8) > 0 ",
+				"value":"3",
+				},
+				{	
+				"comment":"choose stealth ",	
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t10) > 0 ",
+				"value":"2",
+				},
+				{	
+				"comment":"choose shroud ",	
+				"condition": "my_hero(count(),hunter) > 0 AND my_discover(count(),cardid=UNG_999t5) > 0 ",
+				"value":"1",
+				}
+			],
+		},	
+}

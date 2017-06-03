@@ -1,0 +1,16 @@
+{
+	"GameCardId":"UNG_009",
+	"ConfigComment":"RUNT",
+	
+	"BeforePlayCardBonus":
+	{
+		"values":
+		[
+			{
+			"comment":"play wen2",
+				"condition":"my_minions(count()) >= 2",
+				"value":"+8",
+			}
+		],
+	},
+}

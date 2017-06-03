@@ -1,0 +1,16 @@
+{
+	"GameCardId":"CS2_032",
+	"ConfigComment":"ROC",
+	
+	"BeforePlayCardBonus":
+	{
+		"values":
+		[
+			{
+			"comment":"play wen2",
+				"condition":"opp_minions(count()) >= 3",
+				"value":"+9",
+			}
+		],
+	},
+}

@@ -1,0 +1,78 @@
+{	
+	"GameCardId":"UNG_072",	
+	"ConfigComment":"Stonehill Defender discover bonus config",	
+
+	"OnDiscoverCardBonus": 
+	          {
+						  "values":
+						  [
+						  		{						  		  
+						  		  "comment":"choose Tirion Fordring (EX1_383)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=EX1_383) > 0 ",
+						  			"value":"11",
+						  		}
+								,
+						  		{						  		  
+						  		  "comment":"choose Wickerflame Burnbristle (CFM_815)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=CFM_815) > 0 ",
+						  			"value":"10",
+						  		}
+								,
+						  		{						  		  
+						  		  "comment":"choose Sunkeeper Tarim (UNG_015)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_015) > 0 ",
+						  			"value":"9",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Tar Creeper (UNG_928)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_928) > 0 ",
+						  			"value":"8",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Primordial Drake (UNG_848)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_848) > 0 ",
+						  			"value":"7",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Soggoth the Slitherer (OG_340)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=OG_340) > 0 ",
+						  			"value":"6",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Stonehill Defender (UNG_072)",					  		  					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_072) > 0 ",
+						  			"value":"5",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Grimestreet Protector (CFM_062)",					  		  					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=CFM_062) > 0 ",
+						  			"value":"4",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Hogger (NEW1_040)",					  		  					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=NEW1_040) > 0 ",
+						  			"value":"3",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Dirty Rat (CFM_790)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=CFM_790) > 0 ",
+						  			"value":"2",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Stubborn Gastropod (UNG_808)",					  		  					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=UNG_808) > 0 ",
+						  			"value":"1",
+						  		}
+								,
+						  ],
+						},																																																					
+		
+}

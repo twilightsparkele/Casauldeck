@@ -1,0 +1,71 @@
+{
+    "GameCardId":"Mulligan",    
+    "ConfigComment":"This is mulligan rules file.", 
+     
+    "Mulligan": 
+              {
+                          "values":
+                          [
+                                { 
+                                  "comment": "hold Alleycat (CFM_315), Fire Fly (UNG_809), Crackling Razormaw (UNG_915), Kindly Grandmother (KAR_005)",
+                                  "mulligan":"CFM_315,UNG_809,UNG_915,KAR_005,EX1_536,UNG_912,CS2_120,CS2_172",
+                                    "condition":"my_hero(count(),hunter)>0",
+                                    "value":"hold",
+                                }
+                                ,
+                                { 
+                                  "comment": "hold Scavenging Hyena (EX1_531) when opponent is druid or paladin",
+                                  "mulligan":"EX1_531",
+                                    "condition":"opp_hero(count(),druid=true)>0 OR opp_hero(count(),paladin=true)>0",
+                                    "value":"hold",
+                                }
+                                ,
+				{ 
+				"comment": "Animal Companion - keep it only if you have a 1-drop or 2-drop already",
+				"mulligan":"DROP1+NEW1_031,DROP2+NEW1_031",
+				"condition": "*",
+				"value":"hold",
+				}
+				,
+                                { 
+                                  "comment": "hold Golakka Crawler (UNG_807) when opponent is rogue or warrior",
+                                  "mulligan":"UNG_807",
+                                    "condition":"opp_hero(count(),rogue=true)>0 OR opp_hero(count(),warrior=true)>0",
+                                    "value":"hold",
+                                }
+                                ,
+                                { 
+                                  "comment": "hold Dire Wolf Alpha (EX1_162) when opponent is hunter or priest or shaman or warlock",
+                                  "mulligan":"EX1_162",
+                                    "condition":"opp_hero(count(),hunter=true)>0 OR opp_hero(count(),priest=true)>0 OR opp_hero(count(),shaman=true)>0 OR opp_hero(count(),warlock=true)>0",
+                                    "value":"hold",
+                                }
+                                ,
+				{
+				  "comment": "Hold Crackling Razormaw, Dire Wolf Alpha if its the only 2 Drop in hand, or there is already a 1 Drop in hand",
+				  "mulligan":"UNG_915,EX1_162",
+				    "condition": "my_hand(count(),cost=2)<=1 OR my_hand(count(),cost=1,beast=true)>=1",
+				    "value":"hold",
+				}
+				,
+{ 
+				"comment": "Animal Companion - keep it only if you have a 1-drop or 2-drop already",
+				"mulligan":"CFM_315+EX1_315",
+				"condition": "*",
+				"value":"hold",
+				}
+				,
+                                { 
+                                  "comment": "discard all cards not listed as hold",
+                                  "mulligan":"*",
+                                    "condition": "my_hero(count(),hunter) > 0",
+                                    "value":"discard",
+                                },
+                          ],
+                                       
+ 
+                        },
+ 
+                                                                                                                                                                                                                         
+         
+}

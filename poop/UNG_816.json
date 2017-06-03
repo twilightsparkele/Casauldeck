@@ -1,0 +1,41 @@
+{	
+	"GameCardId":"UNG_816",	
+	"ConfigComment":"Stonehill Defender discover bonus config",	
+
+	"OnDiscoverCardBonus": 
+	          {
+						  "values":
+						  [
+						  		{						  		  
+						  		  "comment":"blazecaller",
+						  			"condition": "my_hero(count(),mage) > 0 AND my_discover(count(),cardid=UNG_847) > 0 ",
+						  			"value":"11",
+						  		}
+								,
+						  		{						  		  
+						  		  "comment":"pyros",
+						  			"condition": "my_hero(count(),mage) > 0 AND my_discover(count(),cardid=UNG_027) > 0 ",
+						  			"value":"10",
+						  		}
+								,
+						  		{						  		  
+						  		  "comment":"steamsurger",
+						  			"condition": "my_hero(count(),mage) > 0 AND my_discover(count(),cardid=UNG_021) > 0 ",
+						  			"value":"9",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Tar SERVKALI(UNG_928)",					  		  
+						  			"condition": "my_hero(count(),mage) > 0 AND my_discover(count(),cardid=UNG_816) > 0 ",
+						  			"value":"12",
+						  		}
+								,
+								{	
+						  		  "comment":"anon",					  		  
+						  			"condition": "my_hero(count(),mage) > 0 AND my_discover(count(),cardid=OG_120) > 0 ",
+						  			"value":"-10",
+						  		}
+						  		],
+						},																																																					
+		
+}

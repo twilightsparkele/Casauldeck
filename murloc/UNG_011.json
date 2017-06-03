@@ -1,0 +1,48 @@
+{	
+	"GameCardId":"UNG_011",	
+	"ConfigComment":"Hydrologist discover bonus config",	
+
+	"OnDiscoverCardBonus": 
+	          {
+						  "values":
+						  [
+						  		{						  		  
+						  		  "comment":"choose Getaway Kodo (CFM_800)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=CFM_800) > 0 ",
+						  			"value":"5",
+						  		}
+								,						  		
+								{						  		  
+						  		  "comment":"choose Noble Sacrifice (EX1_130)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=EX1_130) > 0 ",
+						  			"value":"5",
+						  		}
+								,
+						  		{						  		  
+						  		  "comment":"choose Redemption (EX1_136)",
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=EX1_136) > 0 ",
+						  			"value":"3",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Repentance (EX1_379)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=EX1_379) > 0 ",
+						  			"value":"3",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Eye for an Eye (EX1_132)",					  		  
+						  			"condition": "my_hero(count(),paladin) > 0 AND my_discover(count(),cardid=EX1_132) > 0 ",
+						  			"value":"1",
+						  		}
+								,
+						  		{	
+						  		  "comment":"choose Eye for an Eye (EX1_132) against mage",					  		  
+						  			"condition": "opp_hero(count(),mage=true)>0 AND my_discover(count(),cardid=EX1_132) > 0 ",
+						  			"value":"5",
+						  		}
+								,
+						  ],
+						},																																																					
+		
+}
