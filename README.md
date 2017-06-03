@@ -1,1 +1,3 @@
-# Casauldeck
+# MID = MID RANGE HUNTER
+# POOP = MAGE
+# MURLOC = AGGRO PALADIN
